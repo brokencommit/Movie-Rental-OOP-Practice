@@ -1,1 +1,1 @@
-# Jacob Tran Project
+# Jacob Tran Online Movie Rental Project
