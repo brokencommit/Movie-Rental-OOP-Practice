@@ -5,8 +5,14 @@ import com.MovieRental.project.model.CreditCard;
 import java.util.*;
 
 public class CreditCardController {
+    /**
+     * a list of credit cards to simulate a data base
+     */
     private static List<CreditCard> CreditCardList = new ArrayList<>();
 
+    /**
+     * generates a list of credit cards to simulate a data base
+     */
     public static void createHardCodeCreditCard() {
         CreditCard cc1 = new CreditCard(1, "3333 3333 3333 3333", 5, 2018, 451, 80303);
         CreditCard cc2 = new CreditCard(2, "5555 5555 5555 5555", 9, 2018, 573, 80303);
@@ -21,10 +27,17 @@ public class CreditCardController {
         CreditCardList.add(cc5);
     }
 
+    /**
+     * @return creditCardList   a list of all credit cards stored in the system
+     */
     public static List<CreditCard> getCreditCardList() {
         return CreditCardList;
     }
 
+    /**
+     * @param customerID    the id of the customer
+     * @return userCard     the users specific credit card
+     */
     public static List<CreditCard> getUserCreditCard(int customerID) {
         List<CreditCard> userCard = new ArrayList<>();
         for (CreditCard cc : getCreditCardList()) {
@@ -35,6 +48,11 @@ public class CreditCardController {
         return userCard;
     }
 
+    /**
+     * @param customerID    the id of the customer
+     * @param CCV           the ccv for the credit card
+     * @return cc           the users specific credit card
+     */
     public static CreditCard getSpecificCard(int customerID, int CCV) {
         for (CreditCard cc : getCreditCardList()) {
             if (cc.getCustomerID() == customerID && cc.getCardCCV() == CCV) {
@@ -44,6 +62,11 @@ public class CreditCardController {
         return null;
     }
 
+    /**
+     * @param customerID    the id of the customer
+     * @param cardNumber    the card number for the credit card
+     * @return creditCardList   updated credit card list
+     */
     public List<CreditCard> deleteCreditCard(int customerID, String cardNumber) {
         for (CreditCard cc : getCreditCardList()) {
             if (cc.getCustomerID() == customerID && cc.getCardNumber().equals(cardNumber)) {
@@ -54,7 +77,15 @@ public class CreditCardController {
         System.out.print("No such credit card was found");
         return CreditCardList;
     }
-
+    /**
+     * @param customerID    the id of the customer
+     * @param cardNumber    the card number for the credit card
+     * @param cardExpMonth  the expiration month for the credit card
+     * @param cardExpYear   the expiration year for the credit card
+     * @param cardCCV       the ccv for the credit card
+     * @param cardZIP       the zip code for the credit card
+     * @return creditCardList   updated credit card list
+     */
     public List<CreditCard> editCreditCard(int customerID, String cardNumber, int cardExpMonth, int cardExpYear, int cardCCV, int cardZIP) {
         for (CreditCard cc : getCreditCardList()) {
             if (cc.getCustomerID() == customerID) {

@@ -8,6 +8,9 @@ import com.MovieRental.project.controller.MovieController;
 import java.util.Scanner;
 
 public class MainView {
+    /**
+     * main prompt for the start screen
+     */
     public static void MainPrint() {
         // create simulated instance of data base pretty much
         CustomerController.createHardCodeCustomers();

@@ -10,6 +10,9 @@ import com.MovieRental.project.model.MovieFactory;
 import java.util.*;
 
 public class AdminView {
+    /**
+     * main prompt for the admin
+     */
     public static void AdminPrompt() {
         System.out.println("*Logging in*");
         System.out.println("What is your AdminId:");
@@ -74,7 +77,6 @@ public class AdminView {
                     MovieController.removeFromMovieList(deleteMovieID);
                     System.out.println("delete a movie here");
                 }
-
             }
         }
     }

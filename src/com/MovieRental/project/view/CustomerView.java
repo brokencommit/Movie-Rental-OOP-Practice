@@ -11,17 +11,36 @@ import com.MovieRental.project.model.Rental;
 import java.util.*;
 
 public class CustomerView {
+    /**
+     * main prompt for the customer
+     */
     public static void CustomerPrompt() {
-        System.out.println("*Logging in*");
-        System.out.println("What is your First Name:");
-        Scanner first = new Scanner(System.in);
-        String firstString = first.nextLine();
+        System.out.println("Please Enter in: login (0) - signup (1)");
 
-        System.out.println("What is your Last Name:");
-        Scanner last = new Scanner(System.in);
-        String lastString = last.nextLine();
+        Scanner type = new Scanner(System.in);
+        int login_or_signup = type.nextInt();
 
-        Customer c = CustomerController.loginInCustomer(firstString, lastString);
+        Customer c = null;
+        if (login_or_signup == 1) {
+            System.out.println("*Signing Up*");
+            System.out.println("What is your First Name:");
+            Scanner first = new Scanner(System.in);
+            String firstString = first.nextLine();
+
+            System.out.println("What is your Last Name:");
+            Scanner last = new Scanner(System.in);
+            String lastString = last.nextLine();
+            c = CustomerController.SignUp(firstString, lastString);
+        } else if (login_or_signup == 0) {
+            System.out.println("What is your First Name:");
+            Scanner first = new Scanner(System.in);
+            String firstString = first.nextLine();
+
+            System.out.println("What is your Last Name:");
+            Scanner last = new Scanner(System.in);
+            String lastString = last.nextLine();
+            c = CustomerController.loginInCustomer(firstString, lastString);
+        }
         if (c != null) {
             System.out.println("Hello " + c.getCustomerFirstName() + " " + c.getCustomerLastName());
 
@@ -50,7 +69,6 @@ public class CustomerView {
             } else {
                 System.out.print("Oh No!! Something went wrong, please try again.");
             }
-
         }
     }
 }

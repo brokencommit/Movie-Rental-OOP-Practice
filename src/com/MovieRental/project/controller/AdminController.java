@@ -4,7 +4,9 @@ import com.MovieRental.project.model.Admin;
 import java.util.*;
 
 public class AdminController {
+
     public static List<Admin> adminList = new ArrayList<>();
+
 
     public static List<Admin> createHardCodeAdmin() {
         Admin a1 = new Admin(1234);
@@ -15,7 +17,10 @@ public class AdminController {
 
         return adminList;
     }
-
+    /**
+     * @param adminId   the id of the admin
+     * @return a        the admin that logged in
+     */
     public static Admin loginAdmin(int adminId){
         List<Admin> adminList = createHardCodeAdmin();
         for (Admin a : adminList) {

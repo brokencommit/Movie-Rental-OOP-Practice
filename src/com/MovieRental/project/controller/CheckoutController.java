@@ -6,10 +6,16 @@ import com.MovieRental.project.model.Rental;
 import java.util.List;
 import java.util.Scanner;
 
+
 public class CheckoutController {
-    public static boolean confirmCheckout(List<Rental> rental_l, CreditCard cc) {
+    /**
+     * @param rental_list   the list of movies being rented
+     * @param cc            the specific credit card being used
+     * @return  boolean      true if checkout worked
+     */
+    public static boolean confirmCheckout(List<Rental> rental_list, CreditCard cc) {
         double totalPrice = 0.00;
-        for (Rental r : rental_l) {
+        for (Rental r : rental_list) {
             totalPrice += 3.00;
         }
         // verify credit card words (magic with servers and api)

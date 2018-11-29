@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="464.0" y="938.0">com.MovieRental.project.view.MovieView</node>
+    <node x="781.0" y="243.0">com.MovieRental.project.model.Movie</node>
+    <node x="594.0" y="472.0">com.MovieRental.project.model.Customer</node>
+    <node x="636.0" y="101.0">com.MovieRental.project.model.ActionMovie</node>
+    <node x="313.0" y="101.0">com.MovieRental.project.model.ComedyMovie</node>
+    <node x="0.0" y="101.0">com.MovieRental.project.model.HorrorMovie</node>
+    <node x="685.0" y="938.0">Driver</node>
+    <node x="240.0" y="938.0">com.MovieRental.project.view.AdminView</node>
+    <node x="0.0" y="243.0">com.MovieRental.project.controller.CreditCardController</node>
+    <node x="317.0" y="701.0">com.MovieRental.project.controller.RentalController</node>
+    <node x="899.0" y="938.0">com.MovieRental.project.view.MainView</node>
+    <node x="0.0" y="938.0">com.MovieRental.project.view.CustomerView</node>
+    <node x="382.5" y="0.0">com.MovieRental.project.model.Movie_Slave</node>
+    <node x="808.0" y="701.0">com.MovieRental.project.model.Admin</node>
+    <node x="0.0" y="472.0">com.MovieRental.project.model.CreditCard</node>
+    <node x="0.0" y="842.0">com.MovieRental.project.model.MovieFactory</node>
+    <node x="445.0" y="842.0">com.MovieRental.project.controller.CheckoutController</node>
+    <node x="424.0" y="243.0">com.MovieRental.project.controller.CustomerController</node>
+    <node x="836.0" y="842.0">com.MovieRental.project.view.CreditCardView</node>
+    <node x="313.0" y="472.0">com.MovieRental.project.controller.MovieController</node>
+    <node x="908.0" y="472.0">com.MovieRental.project.model.Rental</node>
+    <node x="0.0" y="701.0">com.MovieRental.project.controller.AdminController</node>
+    <node x="577.0" y="701.0">com.MovieRental.project.model.Checkout</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.MovieRental.project.model.ActionMovie" target="com.MovieRental.project.model.Movie_Slave">
+      <point x="0.0" y="-48.5" />
+      <point x="782.5" y="76.0" />
+      <point x="519.1666666666666" y="76.0" />
+      <point x="54.66666666666663" y="25.5" />
+    </edge>
+    <edge source="com.MovieRental.project.model.ComedyMovie" target="com.MovieRental.project.model.Movie_Slave">
+      <point x="0.0" y="-48.5" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="com.MovieRental.project.model.HorrorMovie" target="com.MovieRental.project.model.Movie_Slave">
+      <point x="0.0" y="-48.5" />
+      <point x="146.5" y="76.0" />
+      <point x="409.8333333333333" y="76.0" />
+      <point x="-54.666666666666686" y="25.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="464.5" y="573.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

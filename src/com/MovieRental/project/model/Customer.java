@@ -1,13 +1,17 @@
 package com.MovieRental.project.model;
 
-import java.util.*;
-
 public class Customer {
     private int customerID;
     private String customerFirstName;
     private String customerLastName;
     private boolean customerBanned;
 
+    /**
+     * @param customerID        the users id - constructor
+     * @param firstName         the users first name - constructor
+     * @param lastName          the users last name
+     * @param customerBanned    the users banned status - boolean
+     */
     public Customer(int customerID, String firstName, String lastName, boolean customerBanned) {
         this.customerID = customerID;
         this.customerFirstName = firstName;
@@ -15,34 +19,37 @@ public class Customer {
         this.customerBanned = customerBanned;
     }
 
+    /**
+     * @return customerID   the id for the customer - getter
+     */
     public int getCustomerID() {
         return customerID;
     }
 
+    /**
+     * @return customerFirstName   the first name for the customer - getter
+     */
     public String getCustomerFirstName() {
         return customerFirstName;
     }
 
+    /**
+     * @return customerLastName   the last name for the customer - getter
+     */
     public String getCustomerLastName() {
         return customerLastName;
     }
 
+    /**
+     * @return customerBanned   the banned status for the customer - getter
+     */
     public boolean isCustomerBanned() {
         return customerBanned;
     }
 
-    public void setCustomerID(int customerID) {
-        this.customerID = customerID;
-    }
-
-    public void setCustomerFirstName(String customerFirstName) {
-        this.customerFirstName = customerFirstName;
-    }
-
-    public void setCustomerLastName(String customerLastName) {
-        this.customerLastName = customerLastName;
-    }
-
+    /**
+     * @param customerBanned    the banned status for the customer - setter
+     */
     public void setCustomerBanned(boolean customerBanned) {
         this.customerBanned = customerBanned;
     }

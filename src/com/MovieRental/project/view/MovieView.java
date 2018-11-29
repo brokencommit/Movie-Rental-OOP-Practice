@@ -10,6 +10,9 @@ import java.util.*;
 import static com.MovieRental.project.controller.MovieController.displayMovie;
 
 public class MovieView {
+    /**
+     * main prompt for the movie
+     */
     public static void MoviePrompt() {
         displayMovie();
         System.out.println("Select the movie ID you would like to rent out:");

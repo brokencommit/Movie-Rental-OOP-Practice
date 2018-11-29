@@ -5,6 +5,10 @@ import com.MovieRental.project.model.CreditCard;
 import java.util.Scanner;
 
 public class CreditCardView {
+    /**
+     * @param customerID    the id for the customer
+     * @return CreditCard   the credit card being used
+     */
     public static CreditCard promptForCreditCard(int customerID) {
         System.out.println("What is card number?");
         Scanner num = new Scanner(System.in);

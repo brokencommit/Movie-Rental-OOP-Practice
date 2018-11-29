@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="636.0" y="101.0">com.MovieRental.project.model.ActionMovie</node>
+    <node x="313.0" y="101.0">com.MovieRental.project.model.ComedyMovie</node>
+    <node x="0.0" y="101.0">com.MovieRental.project.model.HorrorMovie</node>
+    <node x="382.5" y="0.0">com.MovieRental.project.model.Movie_Slave</node>
+    <node x="263.3200760850769" y="262.4397371606433">com.MovieRental.project.model.MovieFactory</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.MovieRental.project.model.ActionMovie" target="com.MovieRental.project.model.Movie_Slave">
+      <point x="0.0" y="-48.5" />
+      <point x="782.5" y="76.0" />
+      <point x="519.1666666666666" y="76.0" />
+      <point x="54.66666666666663" y="25.5" />
+    </edge>
+    <edge source="com.MovieRental.project.model.ComedyMovie" target="com.MovieRental.project.model.Movie_Slave">
+      <point x="0.0" y="-48.5" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="com.MovieRental.project.model.HorrorMovie" target="com.MovieRental.project.model.Movie_Slave">
+      <point x="0.0" y="-48.5" />
+      <point x="146.5" y="76.0" />
+      <point x="409.8333333333333" y="76.0" />
+      <point x="-54.666666666666686" y="25.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.1317025440313113" x="693.0" y="298.0" />
+  <SelectedNodes>
+    <node>com.MovieRental.project.model.MovieFactory</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
